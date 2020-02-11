@@ -1,2 +1,2 @@
-# erickrenz.github.io
-My Website
+# krenz.dev || 2020
+My Website created using domains.google and github.com
