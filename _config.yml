@@ -3,7 +3,7 @@ markdown:         kramdown  #redcarpet
 highlighter:      Rogue     #pygments
 
 # Permalinks
-permalink:        /:categories/:title/  # pretty # none
+permalink:        pretty # /:categories/:title/  # pretty # none
 
 # Setup
 title:            krenz
