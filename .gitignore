@@ -1,8 +1,0 @@
-# Jekyll 
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-# OS or Editor
-.DS_Store
