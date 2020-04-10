@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         kramdown  #redcarpet
+highlighter:      Rogue     #pygments
+
+# Permalinks
+permalink:        /:categories/:title/  # pretty # none
+
+# Setup
+title:            krenz
+tagline:          'always be curious'
+description:      'always be curious'
+url:              https://krenz.co
+baseurl:          /
+
+author:
+  name:           'Eric Krenz'
+  url:            https://krenz.co
+  email:          krenzew@mail.uc.edu
+
+# Google Analytics
+google_analytics: UA-158224019-1
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/erickrenz
