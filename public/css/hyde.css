@@ -117,7 +117,7 @@ a.sidebar-nav-item:focus {
   }
 
  /* Icon Format */
-  .sidebar li b{
+  .sidebar li a{
     color: gray;
     text-decoration: none;
     font-size: 1.33rem;
@@ -125,7 +125,7 @@ a.sidebar-nav-item:focus {
   }
 
   /* Icons change color when hovered over */
-  .sidebar li b:hover{
+  .sidebar li a:hover{
     color: white;
   }
 
