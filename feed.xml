@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-
- <title>krenz</title>
- <link href="https://krenz.co/atom.xml" rel="self"/>
- <link href="https://krenz.co/"/>
- <updated>2020-04-13T17:08:39+02:00</updated>
- <id>https://krenz.co</id>
- <author>
-   <name>Eric Krenz</name>
-   <email>krenzew@mail.uc.edu</email>
- </author>
-
- 
- <entry>
-   <title>Hello World</title>
-   <link href="https://krenz.co/blog/hello-world/"/>
-   <updated>2020-04-11T00:00:00+02:00</updated>
-   <id>https://krenz.co/blog/hello-world</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/posts/rothenburg-plonlein.jpeg&quot; alt=&quot;&quot; style=&quot;margin-top: 1rem; margin-bottom: 2rem;&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://krenz.co/feed.xml" rel="self" type="application/atom+xml" /><link href="https://krenz.co/" rel="alternate" type="text/html" /><updated>2020-04-13T17:08:39+02:00</updated><id>https://krenz.co/feed.xml</id><title type="html">krenz</title><subtitle>always be curious</subtitle><author><name>Eric Krenz</name><email>krenzew@mail.uc.edu</email></author><entry><title type="html">Hello World</title><link href="https://krenz.co/blog/hello-world/" rel="alternate" type="text/html" title="Hello World" /><published>2020-04-11T00:00:00+02:00</published><updated>2020-04-11T00:00:00+02:00</updated><id>https://krenz.co/blog/hello-world</id><content type="html" xml:base="https://krenz.co/blog/hello-world/">&lt;p&gt;&lt;img src=&quot;/public/posts/rothenburg-plonlein.jpeg&quot; alt=&quot;&quot; style=&quot;margin-top: 1rem; margin-bottom: 2rem;&quot; /&gt;
 &lt;span style=&quot;float: right; margin-top: -2rem; margin-bottom: -1rem; font-size: .75rem; &quot;&gt;
 &lt;em&gt;Rothenburg, Germany 2020&lt;/em&gt;
 &lt;/span&gt;&lt;/p&gt;
@@ -48,9 +29,4 @@
 &lt;p&gt;If any of that sounds interesting, keep an eye out for more posts that I will be sharing. Cheers!
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;P.S. This post was made to be more light-hearted, comical, and slightly sarcastic. Try not read too deep into anything mentioned above.&lt;/p&gt;
-</content>
- </entry>
- 
-
-</feed>
+&lt;p&gt;P.S. This post was made to be more light-hearted, comical, and slightly sarcastic. Try not read too deep into anything mentioned above.&lt;/p&gt;</content><author><name>Eric Krenz</name><email>krenzew@mail.uc.edu</email></author><summary type="html">Rothenburg, Germany 2020</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://krenz.co/public/posts/rothenburg-plonlein.jpeg" /><media:content medium="image" url="https://krenz.co/public/posts/rothenburg-plonlein.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

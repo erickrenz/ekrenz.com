@@ -391,6 +391,46 @@ tbody tr:nth-child(odd) th {
   margin-bottom: -2rem;
 }
 
+/* Search Bar */
+form.search input[type=text] {
+  padding: .5rem;
+  font-size: .75rem;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: white;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+form.search button {
+  float: left;
+  width: 20%;
+  padding: .5rem;
+  background: #202020;
+  color: white;
+  font-size: .75rem;
+  border: 1px solid grey;
+  margin-top: 0rem;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: grey;
+}
+
+/* Clear floats */
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+hr.search {
+  margin-top: 1rem
+}
+
 /*
  * Pagination
  *
