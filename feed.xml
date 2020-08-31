@@ -1,32 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://krenz.co/feed.xml" rel="self" type="application/atom+xml" /><link href="https://krenz.co/" rel="alternate" type="text/html" /><updated>2020-04-29T10:05:12+02:00</updated><id>https://krenz.co/feed.xml</id><title type="html">krenz</title><subtitle>always be curious</subtitle><author><name>Eric Krenz</name><email>krenzew@mail.uc.edu</email></author><entry><title type="html">Hello World</title><link href="https://krenz.co/blog/hello-world/" rel="alternate" type="text/html" title="Hello World" /><published>2020-04-11T00:00:00+02:00</published><updated>2020-04-11T00:00:00+02:00</updated><id>https://krenz.co/blog/hello-world</id><content type="html" xml:base="https://krenz.co/blog/hello-world/">&lt;p&gt;&lt;img src=&quot;/public/posts/rothenburg-plonlein.jpeg&quot; alt=&quot;&quot; style=&quot;margin-top: 1rem; margin-bottom: 2rem;&quot; /&gt;
-&lt;span style=&quot;float: right; margin-top: -2rem; margin-bottom: -1rem; font-size: .75rem; &quot;&gt;
-&lt;em&gt;Rothenburg, Germany 2020&lt;/em&gt;
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;This is an example blog post that I threw together as an example of what a piece of literature would look like in this site’s ever-growing encyclopedia of knowledge. I am not sure what the contents of this forum will contain yet, so I am going to let it form over time.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://ericwkrenz.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ericwkrenz.com/" rel="alternate" type="text/html" /><updated>2020-08-31T10:59:00-04:00</updated><id>https://ericwkrenz.com/feed.xml</id><title type="html">Eric W. Krenz</title><subtitle>Always Be Curious.</subtitle><author><name>Eric W. Krenz</name></author><entry><title type="html">Hi, I’m Eric</title><link href="https://ericwkrenz.com/hello-world/" rel="alternate" type="text/html" title="Hi, I’m Eric" /><published>2020-04-11T23:45:13-04:00</published><updated>2020-04-11T23:45:13-04:00</updated><id>https://ericwkrenz.com/hello-world</id><content type="html" xml:base="https://ericwkrenz.com/hello-world/">&lt;p&gt;On this website you will find some more &lt;a href=&quot;/about&quot;&gt;about me&lt;/a&gt;, what I have been working on, and tangents on topics that are interesting to me. 
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;This novella will start as some of the first technical writings that I have created for fun. I want to share any thoughts, learnings, photos, tools, or programs that I am interested in. I will continue learning various different topics, so writing these posts to explain different topics will help with the topic’s retention. 
+&lt;p&gt;I’ve worked at &lt;a href=&quot;../about/#work-experience&quot;&gt;three Fortune 100 Companies&lt;/a&gt; in the US and Europe, lived and worked in Germany for 8 months, and recieved a graduate &lt;a href=&quot;../about/#education&quot;&gt;certificate from Harvard Business School&lt;/a&gt;. My major was Computer Engineering, and I graduated with minors in Computer Science and Mathematics. In college, I was elected &lt;a href=&quot;../about/#activities-and-involvement&quot;&gt;Vice President of my fraternity&lt;/a&gt;, skydove from 10,000 feet, and travelled to more than a dozen countries all before my 22&lt;sup&gt;nd&lt;/sup&gt; birthday.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;I am a big fan of puzzles. I enjoy finding order in chaos. Writing will help explain complicated concepts in ways that everyone can understand. I want to improve myself by being able to better explain complicated topics to others. The more I do something, I would hope to get better at it.
+&lt;p&gt;Have questions or comments? I would like to hear from you! Feel free to &lt;a href=&quot;https://www.linkedin.com/in/erickrenz/&quot; target=&quot;_blank&quot;&gt;connect with me on LinkedIn&lt;/a&gt; or &lt;a href=&quot;mailto:krenzew@mail.uc.edu&quot;&gt;send me an email&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;stay-hungry-stay-foolish&quot;&gt;“Stay Hungry, Stay Foolish”&lt;/h2&gt;
-
-&lt;p&gt;Ever since I first saw Steve Job’s Stanford commencement speach on YouTube, those words stuck with me. Those are words that I currently live by, not only for my preferences towards good food and comedies. I am curious by nature and will always continue to find ways to improve as a person. I picture myself learning and posting about many different topics, which could cover but are not limited to:
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tech and software&lt;/li&gt;
-  &lt;li&gt;Business practices&lt;/li&gt;
-  &lt;li&gt;Finances and markets&lt;/li&gt;
-  &lt;li&gt;US/World Travelling&lt;/li&gt;
-  &lt;li&gt;Food
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If any of that sounds interesting, keep an eye out for more posts that I will be sharing. Cheers!
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;P.S. This post was made to be more light-hearted, comical, and slightly sarcastic. Try not read too deep into anything mentioned above.&lt;/p&gt;</content><author><name>Eric Krenz</name><email>krenzew@mail.uc.edu</email></author><summary type="html">Rothenburg, Germany 2020</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://krenz.co/public/posts/rothenburg-plonlein.jpeg" /><media:content medium="image" url="https://krenz.co/public/posts/rothenburg-plonlein.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Cheers! 🍻
+&lt;br /&gt;Eric&lt;/p&gt;</content><author><name>Eric W. Krenz</name></author><summary type="html">On this website you will find some more about me, what I have been working on, and tangents on topics that are interesting to me.</summary></entry></feed>

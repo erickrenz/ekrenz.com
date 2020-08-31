@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://krenz.co/blog/hello-world/</loc>
-<lastmod>2020-04-11T00:00:00+02:00</lastmod>
+<loc>https://ericwkrenz.com/hello-world/</loc>
+<lastmod>2020-04-11T23:45:13-04:00</lastmod>
 </url>
 <url>
-<loc>https://krenz.co/about/</loc>
+<loc>https://ericwkrenz.com/about/</loc>
 </url>
 <url>
-<loc>https://krenz.co/blog/</loc>
+<loc>https://ericwkrenz.com/contact/</loc>
 </url>
 <url>
-<loc>https://krenz.co/</loc>
+<loc>https://ericwkrenz.com/posts/</loc>
+</url>
+<url>
+<loc>https://ericwkrenz.com/</loc>
 </url>
 </urlset>
