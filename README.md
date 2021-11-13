@@ -1,4 +1,4 @@
-# HTML-SimpleBoxLanding
-A Simple Box Landing Screen made with HTML and CSS
+# [ekrenz.com](https://ekrenz.com) || 2020
+My Website was created using [domains.google.com](https://domains.google.com/) and [pages.github.com](https://pages.github.com).
 
-![screenshot](./images/screenshot.png)
+[ericwkrenz.com](http://ericwkrenz.com) also redirects here.
