@@ -4,6 +4,7 @@
 body{
   margin: 0;
   padding: 0;
+  height: 100%;
   background: url(images/mountains.jpeg);
   background-position: center center;
   background-attachment: fixed;
@@ -13,12 +14,15 @@ body{
 
 /* Inner Box */
 .box{
-    width: 450px;
-    background: rgba(0, 0, 0, 0.4);
     padding: 40px;
+    width: 50%;
+    min-height: 33%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
-    margin: auto;
-    margin-top: 5%;
     color: white;
     font-family: 'Century Gothic',sans-serif;
     font-weight: 100;
@@ -27,21 +31,21 @@ body{
   /* Box Image - Headshot */
   .box-img{
     border-radius: 50%;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 225px;
+    max-height: 225px;
   }
 
   /* Box Title */
   .box h1{
-    font-size: 40px;
-    letter-spacing: 4px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
     font-weight: 100;
   }
 
   /* Box Subtitle */
-  .box h5{
-    font-size: 20px;
-    letter-spacing: 3px;
+  .box h3{
+    font-size: 1.25rem;
+    letter-spacing: 2px;
     font-weight: 100;
   }
 
@@ -59,7 +63,7 @@ body{
  /* Icons Inline */
   .box li{
     display: inline-block;
-    margin: 6px;
+    margin: 10px;
     list-style: none;
   }
 
@@ -67,7 +71,7 @@ body{
   .box li a{
     color: white;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 4rem;
     transition: all ease-in-out 250ms;
   }
 
