@@ -1,3 +1,6 @@
+# github codespaces
+.vscode/
+
 # build output
 dist/
 .output/
