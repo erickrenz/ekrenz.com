@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="Eric Krenz">
+  <main>
+    <section class="flex items-center h-full font-mono p-24">
+      <div class="container flex flex-col items-center justify-center m-4">
+        <h1 class="font-bold text-5xl mb-4 dark:text-gray-200">Eric Krenz</h1>
+        <h2 class="font-semibold text-xl text-muted dark:text-slate-300">
+          Software Engineer
+        </h2>
+        <ul class="flex flex-row items-center justify-center mt-8">
+          <li>
+            <a
+              aria-label="GitHub"
+              href="https://github.com/erickrenz"
+              target="_blank"
+              class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+            >
+              <Icon name="tabler:brand-github" class="w-12 h-12" />
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="LinkedIn"
+              href="https://www.linkedin.com/in/erickrenz/"
+              target="_blank"
+              class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+            >
+              <Icon name="tabler:brand-linkedin" class="w-12 h-12" />
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="Email"
+              href="mailto:krenz.eric.krenz@gmail.com"
+              class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+            >
+              <Icon name="tabler:mail" class="w-12 h-12" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</Layout>
