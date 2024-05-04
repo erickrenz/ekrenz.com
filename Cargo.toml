@@ -3,3 +3,10 @@ resolver = "2"
 members = [
     "ekrenz-com",
 ]
+
+[workspace.dependencies]
+axum = "0.7.5"
+tokio = { version = "1.37.0", features = ["full"] }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
