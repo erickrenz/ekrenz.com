@@ -12,6 +12,9 @@ type AtlasMapProps = {
 
 const mobileQuery = '(max-width: 760px)'
 
+const atlasMapClassName =
+  "absolute inset-0 bg-[#d9ddd7] after:absolute after:inset-0 after:z-1 after:pointer-events-none after:content-[''] after:bg-[linear-gradient(90deg,rgba(236,233,225,0.92),rgba(236,233,225,0.2)_52%,rgba(236,233,225,0.04)),linear-gradient(0deg,rgba(236,233,225,0.58),transparent_42%)] max-[760px]:after:bg-[linear-gradient(0deg,rgba(236,233,225,0.94),rgba(236,233,225,0.34)_72%,rgba(236,233,225,0.08)),linear-gradient(90deg,rgba(236,233,225,0.48),transparent)]"
+
 export function AtlasMap({ scene }: AtlasMapProps) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<Map | null>(null)
@@ -86,7 +89,7 @@ export function AtlasMap({ scene }: AtlasMapProps) {
   return (
     <div
       ref={containerRef}
-      className="atlas-map"
+      className={atlasMapClassName}
       aria-label={`Map centered on ${scene.title}`}
     />
   )

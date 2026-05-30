@@ -42,7 +42,7 @@ If tests are added, place component or route tests near the code they cover or u
 
 ## Commit & Pull Request Guidelines
 
-Recent commits use short, imperative subject lines such as `Refine homepage scene controls` and `Add featured scene navigation`. Keep commits focused and use the same style.
+Recent commits use short, imperative subject lines such as `fix: refine homepage scene controls` and `feat: add featured scene navigation`. Keep commits focused and use the same style.
 
 Pull requests should include a brief summary, the verification command run, and screenshots for visible UI changes. Link related issues or docs when applicable, and call out generated-file changes.
 

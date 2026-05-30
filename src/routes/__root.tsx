@@ -42,11 +42,11 @@ function RootComponent() {
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="min-h-full bg-[#ece9e1]">
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="min-h-full bg-[#ece9e1] text-[#181715] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
         {children}
         <Scripts />
       </body>
