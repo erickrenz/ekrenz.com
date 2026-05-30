@@ -8,18 +8,60 @@ export const Route = createFileRoute('/')({
 })
 
 function Home() {
-  const [scene, setScene] = useState<FeaturedScene>(featuredScenes[0])
+  const [sceneIndex, setSceneIndex] = useState(0)
+  const scene: FeaturedScene = featuredScenes[sceneIndex]
 
   useEffect(() => {
-    const nextScene =
-      featuredScenes[Math.floor(Math.random() * featuredScenes.length)]
+    setSceneIndex(Math.floor(Math.random() * featuredScenes.length))
+  }, [])
 
-    setScene(nextScene)
+  const showPreviousScene = () => {
+    setSceneIndex((currentIndex) =>
+      currentIndex === 0 ? featuredScenes.length - 1 : currentIndex - 1,
+    )
+  }
+
+  const showNextScene = () => {
+    setSceneIndex((currentIndex) =>
+      currentIndex === featuredScenes.length - 1 ? 0 : currentIndex + 1,
+    )
+  }
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowLeft') {
+        showPreviousScene()
+      }
+
+      if (event.key === 'ArrowRight') {
+        showNextScene()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
   }, [])
 
   return (
     <main className="relative min-h-screen overflow-hidden">
       <AtlasMap scene={scene} />
+
+      <button
+        type="button"
+        className="scene-arrow scene-arrow-left"
+        aria-label="Show previous featured scene"
+        onClick={showPreviousScene}
+      />
+
+      <button
+        type="button"
+        className="scene-arrow scene-arrow-right"
+        aria-label="Show next featured scene"
+        onClick={showNextScene}
+      />
 
       <section
         className="relative z-2 flex min-h-screen w-[min(520px,calc(100%-32px))] flex-col justify-center gap-[22px] py-14 pr-0 pl-[clamp(16px,6vw,88px)] max-[760px]:w-[min(calc(100%-28px),520px)] max-[760px]:justify-end max-[760px]:py-9 max-[760px]:pr-0 max-[760px]:pl-3.5"

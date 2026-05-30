@@ -53,6 +53,60 @@ select {
     linear-gradient(0deg, rgba(236, 233, 225, 0.58), transparent 42%);
 }
 
+.scene-arrow {
+  position: fixed;
+  top: 50%;
+  z-index: 3;
+  width: 48px;
+  height: 72px;
+  color: var(--text);
+  cursor: pointer;
+  background: rgba(246, 244, 237, 0.76);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 0 14px 38px rgba(24, 23, 21, 0.12);
+  transform: translateY(-50%);
+  backdrop-filter: blur(10px);
+}
+
+.scene-arrow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+}
+
+.scene-arrow-left {
+  left: 16px;
+}
+
+.scene-arrow-left::before {
+  transform: translate(-35%, -50%) rotate(-45deg);
+}
+
+.scene-arrow-right {
+  right: 16px;
+}
+
+.scene-arrow-right::before {
+  transform: translate(-65%, -50%) rotate(135deg);
+}
+
+.scene-arrow:hover,
+.scene-arrow:focus-visible {
+  color: #fff;
+  background: var(--accent);
+}
+
+.scene-arrow:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
 .ol-control button {
   width: 32px;
   height: 32px;
@@ -76,5 +130,21 @@ select {
     background:
       linear-gradient(0deg, rgba(236, 233, 225, 0.94), rgba(236, 233, 225, 0.34) 72%, rgba(236, 233, 225, 0.08)),
       linear-gradient(90deg, rgba(236, 233, 225, 0.48), transparent);
+  }
+
+  .scene-arrow {
+    top: auto;
+    bottom: 18px;
+    width: 44px;
+    height: 56px;
+    transform: none;
+  }
+
+  .scene-arrow-left {
+    left: 14px;
+  }
+
+  .scene-arrow-right {
+    right: 14px;
   }
 }
