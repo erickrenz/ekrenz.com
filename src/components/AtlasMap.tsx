@@ -18,6 +18,7 @@ const atlasMapClassName =
 export function AtlasMap({ scene }: AtlasMapProps) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<Map | null>(null)
+  const hasSyncedInitialSceneRef = useRef(false)
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) {
@@ -43,7 +44,7 @@ export function AtlasMap({ scene }: AtlasMapProps) {
       mapRef.current?.setTarget(undefined)
       mapRef.current = null
     }
-  }, [scene.center, scene.zoom])
+  }, [])
 
   useEffect(() => {
     const mediaQuery = window.matchMedia(mobileQuery)
@@ -79,11 +80,13 @@ export function AtlasMap({ scene }: AtlasMapProps) {
       return
     }
 
-    view.animate({
-      center: fromLonLat(scene.center),
-      zoom: scene.zoom,
-      duration: 600,
-    })
+    if (!hasSyncedInitialSceneRef.current) {
+      hasSyncedInitialSceneRef.current = true
+      return
+    }
+
+    view.setCenter(fromLonLat(scene.center))
+    view.setZoom(scene.zoom)
   }, [scene.center, scene.zoom])
 
   return (

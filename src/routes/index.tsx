@@ -31,11 +31,15 @@ function Home() {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'ArrowLeft') {
-        showPreviousScene()
+        setSceneIndex((currentIndex) =>
+          currentIndex === 0 ? featuredScenes.length - 1 : currentIndex - 1,
+        )
       }
 
       if (event.key === 'ArrowRight') {
-        showNextScene()
+        setSceneIndex((currentIndex) =>
+          currentIndex === featuredScenes.length - 1 ? 0 : currentIndex + 1,
+        )
       }
     }
 
