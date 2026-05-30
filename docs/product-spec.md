@@ -104,3 +104,12 @@ The first version should include:
 - Five curated featured scenes
 - Cloudflare Pages deployment compatibility
 
+## Future Improvements
+
+- Move from public OSM raster tiles to vector tiles for precise cartographic control.
+- Create custom light and dark map themes.
+- Hide or reduce street names where they compete with featured-place content.
+- Reduce visual detail from POIs, minor roads, transit labels, and dense city labels.
+- Use muted land, water, park, and road colors that match the site palette.
+- Emphasize rivers, terrain, parks, or authored geometries for specific scenes.
+- Add highlighted routes, neighborhoods, regions, and annotations as local GeoJSON/vector overlays.
