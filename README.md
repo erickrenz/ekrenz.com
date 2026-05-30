@@ -1,3 +1,3 @@
 # [ekrenz.com](https://ekrenz.com)
 
-My personal website was created using [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com).
+My personal atlas, built with [TanStack Start](https://tanstack.com/start) and [OpenLayers](https://openlayers.org/).
