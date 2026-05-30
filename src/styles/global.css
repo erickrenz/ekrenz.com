@@ -132,11 +132,11 @@ select {
   }
 
   .scene-arrow {
-    top: auto;
-    bottom: 18px;
+    top: 33.5svh;
+    bottom: auto;
     width: 44px;
     height: 56px;
-    transform: none;
+    transform: translateY(-50%);
   }
 
   .scene-arrow-left {
