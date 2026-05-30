@@ -16,10 +16,6 @@ function Home() {
   const [sceneIndex, setSceneIndex] = useState(0)
   const scene: FeaturedScene = featuredScenes[sceneIndex]
 
-  useEffect(() => {
-    setSceneIndex(Math.floor(Math.random() * featuredScenes.length))
-  }, [])
-
   const showPreviousScene = () => {
     setSceneIndex((currentIndex) =>
       currentIndex === 0 ? featuredScenes.length - 1 : currentIndex - 1,
