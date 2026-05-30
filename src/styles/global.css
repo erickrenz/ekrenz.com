@@ -61,12 +61,10 @@ select {
   height: 72px;
   color: var(--text);
   cursor: pointer;
-  background: rgba(246, 244, 237, 0.76);
-  border: 1px solid var(--line);
+  background: transparent;
+  border: 1px solid transparent;
   border-radius: 4px;
-  box-shadow: 0 14px 38px rgba(24, 23, 21, 0.12);
   transform: translateY(-50%);
-  backdrop-filter: blur(10px);
 }
 
 .scene-arrow::before {
@@ -98,8 +96,9 @@ select {
 
 .scene-arrow:hover,
 .scene-arrow:focus-visible {
-  color: #fff;
-  background: var(--accent);
+  color: var(--text);
+  background: rgba(93, 90, 83, 0.18);
+  border-color: rgba(93, 90, 83, 0.24);
 }
 
 .scene-arrow:focus-visible {

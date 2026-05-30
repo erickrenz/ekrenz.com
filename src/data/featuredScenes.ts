@@ -19,7 +19,7 @@ export const featuredScenes: Array<FeaturedScene> = [
     title: "Florence",
     subtitle: "Our favorite vacation spot with great food and wine",
     center: [11.2558, 43.7696],
-    zoom: 14,
+    zoom: 15,
   },
   {
     slug: "cincinnati",
