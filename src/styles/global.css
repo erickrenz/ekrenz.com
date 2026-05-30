@@ -1,1 +1,149 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import 'ol/ol.css';
+
+:root {
+  color-scheme: light;
+  --background: #ece9e1;
+  --surface: rgba(246, 244, 237, 0.9);
+  --text: #181715;
+  --muted: #5d5a53;
+  --line: rgba(24, 23, 21, 0.18);
+  --accent: #7f2431;
+  --shadow: 0 20px 70px rgba(24, 23, 21, 0.18);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+}
+
+@theme {
+  --font-serif: Georgia, 'Times New Roman', serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.atlas-map {
+  position: absolute;
+  inset: 0;
+  background: #d9ddd7;
+}
+
+.atlas-map::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  content: '';
+  background:
+    linear-gradient(90deg, rgba(236, 233, 225, 0.92), rgba(236, 233, 225, 0.2) 52%, rgba(236, 233, 225, 0.04)),
+    linear-gradient(0deg, rgba(236, 233, 225, 0.58), transparent 42%);
+}
+
+.scene-arrow {
+  position: fixed;
+  top: 50%;
+  z-index: 3;
+  width: 48px;
+  height: 72px;
+  color: var(--text);
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transform: translateY(-50%);
+}
+
+.scene-arrow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+}
+
+.scene-arrow-left {
+  left: 16px;
+}
+
+.scene-arrow-left::before {
+  transform: translate(-35%, -50%) rotate(-45deg);
+}
+
+.scene-arrow-right {
+  right: 16px;
+}
+
+.scene-arrow-right::before {
+  transform: translate(-65%, -50%) rotate(135deg);
+}
+
+.scene-arrow:hover,
+.scene-arrow:focus-visible {
+  color: var(--text);
+  background: rgba(93, 90, 83, 0.18);
+  border-color: rgba(93, 90, 83, 0.24);
+}
+
+.scene-arrow:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.ol-control button {
+  width: 32px;
+  height: 32px;
+  color: var(--text);
+  background: rgba(246, 244, 237, 0.9);
+  border-radius: 4px;
+}
+
+.ol-control button:hover,
+.ol-control button:focus {
+  color: #fff;
+  background: var(--accent);
+}
+
+.ol-attribution {
+  font-size: 0.72rem;
+}
+
+@media (max-width: 760px) {
+  .atlas-map::after {
+    background:
+      linear-gradient(0deg, rgba(236, 233, 225, 0.94), rgba(236, 233, 225, 0.34) 72%, rgba(236, 233, 225, 0.08)),
+      linear-gradient(90deg, rgba(236, 233, 225, 0.48), transparent);
+  }
+
+  .scene-arrow {
+    top: 33.5svh;
+    bottom: auto;
+    width: 44px;
+    height: 56px;
+    transform: translateY(-50%);
+  }
+
+  .scene-arrow-left {
+    left: 14px;
+  }
+
+  .scene-arrow-right {
+    right: 14px;
+  }
+}
