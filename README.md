@@ -1,3 +1,3 @@
 # [ekrenz.com](https://ekrenz.com)
 
-My personal atlas, built with [TanStack Start](https://tanstack.com/start) and [OpenLayers](https://openlayers.org/).
+A map-first personal atlas built with TanStack Start, OpenLayers, and Tailwind CSS.
