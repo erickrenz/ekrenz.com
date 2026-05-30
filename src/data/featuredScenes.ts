@@ -15,18 +15,18 @@ export const featuredScenes: Array<FeaturedScene> = [
     zoom: 14,
   },
   {
-    slug: "florence",
-    title: "Florence",
-    subtitle: "La dolce vita toscana",
-    center: [11.2531, 43.768],
-    zoom: 15,
-  },
-  {
     slug: "cincinnati",
     title: "University of Cincinnati",
     subtitle: "Great experience and opportunities",
     center: [-84.5155, 39.1329],
     zoom: 13,
+  },
+  {
+    slug: "florence",
+    title: "Florence",
+    subtitle: "La dolce vita toscana",
+    center: [11.2531, 43.768],
+    zoom: 15,
   },
   {
     slug: "cuyahoga-valley",
