@@ -10,6 +10,8 @@ type AtlasMapProps = {
   scene: FeaturedScene
 }
 
+const mobileQuery = '(max-width: 760px)'
+
 export function AtlasMap({ scene }: AtlasMapProps) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<Map | null>(null)
@@ -39,6 +41,33 @@ export function AtlasMap({ scene }: AtlasMapProps) {
       mapRef.current = null
     }
   }, [scene.center, scene.zoom])
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(mobileQuery)
+
+    const updateMapFrame = () => {
+      const map = mapRef.current
+      const view = map?.getView()
+
+      if (!map || !view) {
+        return
+      }
+
+      view.padding = mediaQuery.matches
+        ? [0, 0, Math.round(window.innerHeight / 3), 0]
+        : [0, 0, 0, 0]
+      map.updateSize()
+    }
+
+    updateMapFrame()
+    window.addEventListener('resize', updateMapFrame)
+    mediaQuery.addEventListener('change', updateMapFrame)
+
+    return () => {
+      window.removeEventListener('resize', updateMapFrame)
+      mediaQuery.removeEventListener('change', updateMapFrame)
+    }
+  }, [])
 
   useEffect(() => {
     const view = mapRef.current?.getView()
